@@ -2,7 +2,9 @@
 
 ## Commands
 
-`cd /path/to/directory`
+```shell
+cd /path/to/directory
+```
 changes current directory, if no path is specified will bring to the current user' home directory.
 
 ```shell
@@ -57,7 +59,8 @@ creates a new file without any content.
 ## Useful packages
 
 #### Netstat 
-Display network-related information such as open connections and socket ports. `apt-get install net-tools`
+Display network-related information such as open connections and socket ports. 
+`apt-get install net-tools`
 `netstat -ant`
 `netstat -pant`
 

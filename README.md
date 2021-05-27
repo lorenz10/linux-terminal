@@ -1,4 +1,4 @@
-# Everything about Linux Terminal
+# Everything (I know) about Linux Terminal
 
 ## Commands
 

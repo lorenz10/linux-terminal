@@ -58,8 +58,7 @@ creates a new file without any content.
 -------------
 ## Useful packages
 
-#### Netstat 
-Display network-related information such as open connections and socket ports. 
+* netstat: display network-related information such as open connections and socket ports. 
 `apt-get install net-tools`
 `netstat -ant`
 `netstat -pant`
@@ -67,4 +66,5 @@ Display network-related information such as open connections and socket ports.
 -------------
 ## Philosophy
 
-* Copy n paste / Cut n paste: it is possible to use them inside the terminal, but you need to press `ctrl` + `shift` + `c` or `v`.
+#### Copy and paste / cut and paste
+It is possible to use them inside the terminal, but you need to press `ctrl` + `shift` + `c` or `v`.

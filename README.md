@@ -2,9 +2,7 @@
 
 ## Commands
 
-```shell
-cd /path/to/directory
-```
+`cd /path/to/directory`
 changes current directory, if no path is specified will bring to the current user' home directory.
 
 ```shell
@@ -56,11 +54,14 @@ touch new_file
 creates a new file without any content.
 
 -------------
-## Useful libraries
+## Useful packages
 
-
+#### Netstat 
+Display network-related information such as open connections and socket ports. `apt-get install net-tools`
+`netstat -ant`
+`netstat -pant`
 
 -------------
 ## Philosophy
 
-* Copy/Cut n paste: it is possible to use them with the terminal, but you need to press `ctrl` + `shift` + `c` or `v`.
+* Copy n paste / Cut n paste: it is possible to use them inside the terminal, but you need to press `ctrl` + `shift` + `c` or `v`.

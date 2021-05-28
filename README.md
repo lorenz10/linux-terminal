@@ -4,8 +4,10 @@
 
 ```shell
 cd /path/to/directory
+cd #TRICK opens the current user' home directory
 ```
-changes current directory, if no path is specified will bring to the current user' home directory.
+opens a given directory. 
+When tiping a directory name, if we press the `Tab` button the terminal will automatically complete its name, given that a direcotry starting with such characters exists and there is only one candidate.
 
 ```shell
 cp /origin/directory/file /destination/directory
@@ -13,9 +15,9 @@ cp /origin/directory/file /destination/directory
 copies the file into another directory.
 
 ```shell
-kill <PID>
+kill PID #Process ID
 ```
-kills the process with that specific PID.
+kills the process with a given PID.
 
 ```shell
 mkdir new_directory
@@ -24,9 +26,9 @@ creates a new directory.
 
 ```shell
 move /origin/directory/file /destination/directory
-move old_file_name new_file_name
+move old_file_name new_file_name #TRICK changes the name of a file
 ```
-moves the file into another directory, changes the name of a file.
+moves the file into another directory.
 
 ```shell
 ps -ef
@@ -42,18 +44,18 @@ gets the current directory path.
 rm /path/to/file
 rm -r /path/to/directory
 ```
-removes a file, removes a directory with all its content (usually super user is required).
+removes a file, the second instead removes a directory with all its content (usually super user will be required).
 
 ```shell
-su
+su #super user
 su <user>
 ```
-changes the current user to be the super user, changes back the super user into the specified user.
+switches the current user into the super user, the second switches back the SU into the specified user.
 
 ```shell
 touch new_file
 ```
-creates a new file without any content.
+creates a new empty file.
 
 -------------
 ## Useful packages

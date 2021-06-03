@@ -2,11 +2,8 @@
 
 ## Commands
 
-```shell
-cd /path/to/directory
-cd #TRICK opens the current user' home directory
-```
-opens a given directory. 
+`cd /path/to/directory`
+opens a given directory. If no path is specified will lead to the current user' home directory.
 When tiping a directory name, if we press the `Tab` button the terminal will automatically complete its name, given that a direcotry starting with such characters exists and there is only one candidate.
 
 ```shell

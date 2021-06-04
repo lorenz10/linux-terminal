@@ -2,13 +2,24 @@
 
 ## Commands
 
-#### IMPORTANT to show all the options available for a specific command write it follwed by -h or --help
+#### IMPORTANT -> to show all the options available for a specific command write it follwed by -h or --help <-
 
 ```shell
 cd /path/to/directory
 ```
-opens a given directory. If no path is specified will lead to the current user' home directory.
+opens a given directory. 
+
+`cd` alone leads to the current user' home directory.
+
+`cd ..` alone leads to the previouse level of directories.
+For example `cd ../../data` bring us two levels back in the tree and opens the directory named "data".
+
 When tiping a directory name, if we press the `Tab` button the terminal will automatically complete its name, given that a direcotry starting with such characters exists and there is only one candidate.
+
+```shell
+cat > new_file_name
+```
+creates a new file. Then the cursor will be on a new line giving the possibility to write inside the new file. Once terminated typing can press `Ctrl + D` to finish editing.
 
 ```shell
 clear
@@ -21,9 +32,9 @@ cp /origin/directory/file /destination/directory
 copies the file into another directory.
 
 ```shell
-kill PID #Process ID
+kill PID1 PID2 PID3 # PID = Process ID
 ```
-kills the process with a given PID.
+kills the processes with a given PID. Can kill as many PIDs as you want.
 
 ```shell
 ls /path/to/directory
@@ -61,7 +72,7 @@ pwd
 gets the current directory path.
 
 ```shell
-rm /path/to/file
+rm /path/to/file1
 rm -r /path/to/directory # -r is needed to remove recursively all the content of the directory
 ```
 removes a file or a directory (with all its content).
@@ -74,7 +85,7 @@ switches the current user into the super user.
 ```shell
 su user_name
 ```
-switches back the SU into the specified user.
+switches back the super user into the specified user.
 
 ```shell
 touch new_file

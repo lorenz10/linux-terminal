@@ -2,7 +2,7 @@
 
 ## Commands
 
-#### IMPORTANT -> to show all the options available for a specific command write it follwed by -h or --help <-
+#### IMPORTANT: to show all the options available for a specific command write it follwed by -h or --help
 
 ```shell
 cd /path/to/directory
@@ -11,8 +11,10 @@ opens a given directory.
 
 `cd` alone leads to the current user' home directory.
 
-`cd ..` alone leads to the previouse level of directories.
+`cd ..` leads to the parent directory.
 For example `cd ../../data` bring us two levels back in the tree and opens the directory named "data".
+
+`cd -` leads to the previous working directory.
 
 When tiping a directory name, if we press the `Tab` button the terminal will automatically complete its name, given that a direcotry starting with such characters exists and there is only one candidate.
 
@@ -24,7 +26,7 @@ creates a new file. Then the cursor will be on a new line giving the possibility
 ```shell
 clear
 ```
-clear the terminal UI from previous commands.
+clear the view from previous commands.
 
 ```shell
 cp /origin/directory/file /destination/directory
@@ -88,6 +90,11 @@ su user_name
 switches back the super user into the specified user.
 
 ```shell
+tail -n 100 new_file
+```
+shows the last 100 lines of a file, shows the last 10 if -n option is not specified.
+
+```shell
 touch new_file
 ```
 creates a new empty file.
@@ -100,8 +107,16 @@ creates a new empty file.
 `netstat -ant`
 `netstat -pant`
 
+* vim: a highly configurable text editor built to make creating and changing any kind of text very efficient.
+`vi file` to open a specific file.
+press `i` to switch into insert mode and be able to edit the file, then `esc` when finished editing.
+`:wq` to enter in command mode, write changes and quit the file.
+
 -------------
 ## Philosophy
 
 #### Copy and paste / cut and paste
 It is possible to use them inside the terminal, but you need to press `ctrl` + `shift` + `c` or `v`.
+
+#### ~ 
+This symbol represents the path of the home directory of the current user.

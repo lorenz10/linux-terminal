@@ -34,6 +34,11 @@ cp /origin/directory/file /destination/directory
 copies the file into another directory.
 
 ```shell
+echo 'Text to be placed in the file' > new_file.txt
+```
+creates a new file containing the provided text.
+
+```shell
 kill PID1 PID2 PID3 # PID = Process ID
 ```
 kills the processes with a given PID. Can kill as many PIDs as you want.
@@ -74,6 +79,11 @@ pwd
 gets the current directory path.
 
 ```shell
+python -m SimpleHTTPServer [PORT]
+```
+creates a simple server in the current directory, listening on the specified, optional port.
+
+```shell
 rm /path/to/file1
 rm -r /path/to/directory # -r is needed to remove recursively all the content of the directory
 ```
@@ -102,15 +112,16 @@ creates a new empty file.
 -------------
 ## Useful packages
 
-* netstat: display network-related information such as open connections and socket ports. 
-`apt-get install net-tools`
-`netstat -ant`
-`netstat -pant`
+#### netstat
+display network-related information such as open connections and socket ports. 
+* `apt-get install net-tools`
+* `netstat -ant` or `netstat -pant`
 
-* vim: a highly configurable text editor built to make creating and changing any kind of text very efficient.
-`vi file` to open a specific file.
-press `i` to switch into insert mode and be able to edit the file, then `esc` when finished editing.
-`:wq` to enter in command mode, write changes and quit the file.
+#### vim
+a highly configurable text editor built to make creating and changing any kind of text very efficient.
+* `vi file` to open a specific file.
+* press `i` to switch into insert mode and be able to edit the file, then `esc` when finished editing.
+* `:wq` to enter in command mode, write changes and quit the file.
 
 -------------
 ## Philosophy

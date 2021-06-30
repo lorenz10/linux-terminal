@@ -23,10 +23,12 @@ cp /origin/directory/file /destination/directory
 ```
 copies the file into another directory.
 
+`cp -r /origin/directory1 /destination/directory2` copies direcory1 and all its content into directory2.
+
 ```shell
 ls /path/to/directory
 ```
-shows the content of the specidic directory, if no forlder is specified show the current one.
+shows the content of the specidic directory, if no forlder is specified show the current one. Use `-a` to show also hidden files.
 
 ```shell
 mkdir new_directory
@@ -45,11 +47,22 @@ gets the current directory path.
 
 ```shell
 rm /path/to/file1
-rm -r /path/to/directory # -r is needed to remove recursively all the content of the directory
 ```
-removes a file or a directory (with all its content).
+removes file1.
+
+`rm -r /path/to/directory` removes directory and all its content (-r is used to consider recursively the content).
+
+```shell
+tree
+```
+shows the contents of the working directory recursively showing sub-directories and files. Use `-a` to show also hidden files.
 
 #### 1.b Files
+
+```shell
+cat file_name
+```
+shows the content of the file.
 
 ```shell
 cat > new_file_name
@@ -75,6 +88,11 @@ shows the last 100 lines of a file, shows the last 10 if -n option is not specif
 touch new_file
 ```
 creates a new empty file.
+
+```shell
+wget -O new_file_name.zip https://github.com/path/to/archive/master.zip
+```
+downloads a file from the web, renaming it.
 
 #### 1.c Other
 
@@ -117,8 +135,6 @@ switches the current user into the super user.
 su user_name
 ```
 switches back the super user into the specified user.
-
-#### _IMPORTANT: to show the options available for a specific command, type it followed by -h or --help_
 
 -------------
 

@@ -86,7 +86,7 @@ creates a new file containing the provided text.
 
 -> **mv**
 
-`mv old_file_name new_file_name` changes the name of a file.
+`mv old_file_name new_file_name` changes the name of a file. Works with directories too.
 
 ```shell
 tail

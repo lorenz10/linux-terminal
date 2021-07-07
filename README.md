@@ -42,12 +42,9 @@ mkdir
 `mkdir new_directory`
 creates a new directory.
 
-```shell
-move
-```
+-> **mv**
 
-`move /origin/directory/file /destination/directory`
-moves the file into another directory.
+`mv /origin/directory/file /destination/directory` moves the file into another directory.
 
 ```shell
 pwd
@@ -87,12 +84,9 @@ echo
 `echo 'Text to be placed in the file' > new_file.txt`
 creates a new file containing the provided text.
 
-```shell
-move
-```
+-> **mv**
 
-`move old_file_name new_file_name`
-changes the name of a file.
+`mv old_file_name new_file_name` changes the name of a file.
 
 ```shell
 tail

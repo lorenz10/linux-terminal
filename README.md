@@ -28,6 +28,7 @@ cp
 copies the file into another directory.
 
 `cp -r /origin/directory1 /destination/directory2` copies direcory1 and all its content into directory2.
+`cp -r /origin/directory1 .` copies direcory1 and all its content into current directory.
 
 ```shell
 ls

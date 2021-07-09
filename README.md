@@ -17,9 +17,7 @@ For example `cd ../../data` bring us two levels back in the tree and opens the d
 
 When tiping a directory name, if we press the `Tab` button the terminal will automatically complete its name, given that a direcotry starting with such characters exists and there is only one candidate.
 
-```shell
-cp
-```
+-> **cp**
 
 `cp /origin/directory/file /destination/directory`
 copies the file into another directory.
@@ -28,16 +26,12 @@ copies the file into another directory.
 
 `cp -r /origin/directory1 .` copies direcory1 and all its content into current directory.
 
-```shell
-ls
-```
+-> **ls**
 
 `ls /path/to/directory`
 shows the content of the specidic directory, if no forlder is specified show the current one. Use `-a` to show also hidden files.
 
-```shell
-mkdir
-```
+-> **mkdir**
 
 `mkdir new_directory`
 creates a new directory.
@@ -46,23 +40,19 @@ creates a new directory.
 
 `mv /origin/directory/file /destination/directory` moves the file into another directory.
 
-```shell
-pwd
-```
+-> **pwd**
+
 gets the current directory path.
 
-```shell
-rm
-```
+-> **rm**
 
 `rm /path/to/file1`
 removes file1.
 
 `rm -r /path/to/directory` removes directory and all its content (-r is used to consider recursively the content).
 
-```shell
-tree
-```
+-> **tree**
+
 shows the contents of the working directory recursively showing sub-directories and files. Use `-a` to show also hidden files.
 
 #### *Files*
@@ -109,7 +99,7 @@ wget
 `wget -O new_file_name.zip https://github.com/path/to/archive/master.zip`
 downloads a file from the web, renaming it.
 
-#### 1.c Other
+#### *Other*
 
 ```shell
 clear
@@ -137,11 +127,6 @@ ps -ef
 shows all running processes with detailed info.
 
 ```shell
-python -m SimpleHTTPServer [PORT]
-```
-creates a simple server in the current directory, listening on the specified, optional port.
-
-```shell
 su #super user
 ```
 switches the current user into the super user.
@@ -160,6 +145,30 @@ display network-related information such as open connections and socket ports.
 * `apt-get install net-tools`
 * `netstat -ant` or `netstat -pant`
 
+#### Simple HTTP server (Python)
+creates a simple HTTP server on your machine.
+
+1. create a new directory
+2. inside it create a new `index.html` file with the following content:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Python SimpleHTTPServer</h3>
+    <p style="margin-left: 30px; color: rebeccapurple">Python 3 Web Server</p> 
+</body>
+</html>
+```
+
+3. move into the directory and type: `python -m SimpleHTTPServer [PORT]`, optionally specifing the port where to start listening.
+
 #### vim
 a highly configurable text editor built to make creating and changing any kind of text very efficient.
 * `vi file_name` to open a specific file.
@@ -177,12 +186,12 @@ It is possible to use them inside the terminal, but you need to press `ctrl` + `
 This symbol represents the path of the home directory of the current user.
 
 #### Commands concatenation
-`command1 ; command2` executes the first and then the second command.
-`command1 && command2` executes the first command. Executes the second if the first ends successfully.
+`command1 ; command2` executes the first and then the second command. \
+`command1 && command2` executes the first command. Executes the second if the first ends successfully. \
 `command1 || command2` executes the first command. Executes the second if the first fails.
 
 #### Typing commands
-Press `ctrl` + `w` to delete the last word typed. 
+Press `ctrl` + `w` to delete the last word typed. \
 Press `ctrl` + `u` to clear everything you just typed in.
 
 #### Processes

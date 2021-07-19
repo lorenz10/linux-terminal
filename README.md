@@ -6,125 +6,105 @@
 
 - **cd**
 
-`cd /path/to/directory` opens a given directory. 
+    `cd /path/to/directory` opens a given directory. 
 
-`cd` alone leads to the current user' home directory.
+    `cd` alone leads to the current user' home directory.
 
-`cd ..` leads to the parent directory.
-For example `cd ../../data` bring us two levels back in the tree and opens the directory named "data".
+    `cd ..` leads to the parent directory. For example `cd ../../data` bring us two levels back in the tree and opens the directory named "data".
 
-`cd -` leads to the previous working directory.
+    `cd -` leads to the previous working directory.
 
-When tiping a directory name, if we press the `Tab` button the terminal will automatically complete its name, given that a direcotry starting with such characters exists and there is only one candidate.
+    When tiping a directory name, if we press the `Tab` button the terminal will automatically complete its name, given that a direcotry starting with such characters exists and there is only one candidate.
 
 - **cp**
 
-`cp /origin/directory/file /destination/directory`
-copies the file into another directory.
+    `cp /origin/directory/file /destination/directory` copies the file into another directory.
 
-`cp -r /origin/directory1 /destination/directory2` copies direcory1 and all its content into directory2.
+    `cp -r /origin/directory1 /destination/directory2` copies direcory1 and all its content into directory2.
 
-`cp -r /origin/directory1 .` copies direcory1 and all its content into current directory.
+    `cp -r /origin/directory1 .` copies direcory1 and all its content into current directory.
 
 - **ls**
 
-`ls /path/to/directory`
-shows the content of the specidic directory, if no forlder is specified show the current one. Use `-a` to show also hidden files.
+    `ls /path/to/directory` shows the content of the specidic directory, if no forlder is specified show the current one. Use `-a` to show also hidden files.
 
 - **mkdir**
 
-`mkdir new_directory`
-creates a new directory.
+    `mkdir new_directory` creates a new directory.
 
 - **mv**
 
-`mv /origin/directory/file /destination/directory` moves the file into another directory.
+    `mv /origin/directory/file /destination/directory` moves the file into another directory.
 
 - **pwd**
 
-gets the current directory path.
+    gets the current directory path.
 
 - **rm**
 
-`rm /path/to/file1`
-removes file1.
+    `rm /path/to/file1` removes file1.
 
-`rm -r /path/to/directory` removes directory and all its content (-r is used to consider recursively the content).
+    `rm -r /path/to/directory` removes directory and all its content (-r is used to consider recursively the content).
 
 - **tree**
 
-shows the contents of the working directory recursively showing sub-directories and files. Use `-a` to show also hidden files.
+    shows the contents of the working directory recursively showing sub-directories and files. Use `-a` to show also hidden files.
 
 #### Files
 
 - **cat**
 
-`cat file_name`
-shows the content of the file.
+    `cat file_name` shows the content of the file.
 
-`cat > new_file_name`
-creates a new file. Then the cursor will be on a new line giving the possibility to write inside the new file. Once terminated typing can press `Ctrl + c` to finish editing.
+    `cat > new_file_name` creates a new file. Then the cursor will be on a new line giving the possibility to write inside the new file. Once terminated typing can press `Ctrl + c` to finish editing.
 
 - **echo**
 
-`echo 'Text to be placed in the file' > new_file.txt`
-creates a new file containing the provided text.
+    `echo 'Text to be placed in the file' > new_file.txt` creates a new file containing the provided text.
 
 - **mv**
 
-`mv old_file_name new_file_name` changes the name of a file. Works with directories too.
+    `mv old_file_name new_file_name` changes the name of a file. Works with directories too.
 
 - **tail**
 
-`tail -n 100 new_file`
-shows the last 100 lines of a file, shows the last 10 if -n option is not specified.
+    `tail -n 100 new_file` shows the last 100 lines of a file, shows the last 10 if -n option is not specified.
 
 - **touch**
 
-`touch new_file_name`
-creates a new empty file.
+    `touch new_file_name` creates a new empty file.
 
 - **wget**
 
-`wget -O new_file_name.zip https://github.com/path/to/archive/master.zip`
-downloads a file from the web, renaming it.
+    `wget -O new_file_name.zip https://github.com/path/to/archive/master.zip` downloads a file from the web, renaming it.
 
 #### Others
 
-```shell
-clear
-```
-clear the view from previous commands.
+- **clear** 
 
-```shell
-date
-```
-shows the current timestamp. If followed by `+%s` it is shown in unix format.
+    clears the view from previous commands.
 
-```shell
-kill PID1 PID2 PID3 # PID = Process ID
-```
-kills the processes with a given PID. Can kill as many PIDs as you want.
+- **date**
 
-```shell
-ping IP_address
-```
-ping the specific IP.
+    shows the current timestamp. If followed by `+%s` it is shown in unix format.
 
-```shell
-ps -ef
-```
-shows all running processes with detailed info.
+- **kill**
 
-```shell
-su #super user
-```
-switches the current user into the super user.
+    `kill <PID>` kills the processes with a given PID (process ID). Can specify as many PIDs as you want.
 
-```shell
-su user_name
-```
-switches back the super user into the specified user.
+- **ping**
+
+    `ping <IP>` ping the specific IP.
+
+- **ps**
+
+    `ps -ef` shows all running processes with detailed info.
+
+- **su**
+
+    `su` alone switches the current user into the super user.
+    
+    `su user_name` switches back the super user into the specified user.
 
 -------------
 

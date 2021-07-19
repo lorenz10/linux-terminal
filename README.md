@@ -2,9 +2,9 @@
 
 ## 1. Commands
 
-#### *File system*
+#### File system
 
--> **cd**
+- **cd**
 
 `cd /path/to/directory` opens a given directory. 
 
@@ -17,7 +17,7 @@ For example `cd ../../data` bring us two levels back in the tree and opens the d
 
 When tiping a directory name, if we press the `Tab` button the terminal will automatically complete its name, given that a direcotry starting with such characters exists and there is only one candidate.
 
--> **cp**
+- **cp**
 
 `cp /origin/directory/file /destination/directory`
 copies the file into another directory.
@@ -26,40 +26,38 @@ copies the file into another directory.
 
 `cp -r /origin/directory1 .` copies direcory1 and all its content into current directory.
 
--> **ls**
+- **ls**
 
 `ls /path/to/directory`
 shows the content of the specidic directory, if no forlder is specified show the current one. Use `-a` to show also hidden files.
 
--> **mkdir**
+- **mkdir**
 
 `mkdir new_directory`
 creates a new directory.
 
--> **mv**
+- **mv**
 
 `mv /origin/directory/file /destination/directory` moves the file into another directory.
 
--> **pwd**
+- **pwd**
 
 gets the current directory path.
 
--> **rm**
+- **rm**
 
 `rm /path/to/file1`
 removes file1.
 
 `rm -r /path/to/directory` removes directory and all its content (-r is used to consider recursively the content).
 
--> **tree**
+- **tree**
 
 shows the contents of the working directory recursively showing sub-directories and files. Use `-a` to show also hidden files.
 
-#### *Files*
+#### Files
 
-```shell
-cat
-```
+- **cat**
 
 `cat file_name`
 shows the content of the file.
@@ -67,39 +65,31 @@ shows the content of the file.
 `cat > new_file_name`
 creates a new file. Then the cursor will be on a new line giving the possibility to write inside the new file. Once terminated typing can press `Ctrl + c` to finish editing.
 
-```shell
-echo
-```
+- **echo**
 
 `echo 'Text to be placed in the file' > new_file.txt`
 creates a new file containing the provided text.
 
--> **mv**
+- **mv**
 
 `mv old_file_name new_file_name` changes the name of a file. Works with directories too.
 
-```shell
-tail
-```
+- **tail**
 
 `tail -n 100 new_file`
 shows the last 100 lines of a file, shows the last 10 if -n option is not specified.
 
-```shell
-touch
-```
+- **touch**
 
 `touch new_file_name`
 creates a new empty file.
 
-```shell
-wget
-```
+- **wget**
 
 `wget -O new_file_name.zip https://github.com/path/to/archive/master.zip`
 downloads a file from the web, renaming it.
 
-#### *Other*
+#### Others
 
 ```shell
 clear

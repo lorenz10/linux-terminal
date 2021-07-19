@@ -115,7 +115,7 @@ display network-related information such as open connections and socket ports.
 * `apt-get install net-tools`
 * `netstat -ant` or `netstat -pant`
 
-#### Simple HTTP server (Python)
+#### simpleHTTPserver (Python)
 creates a simple HTTP server on your machine.
 
 1. create a new directory

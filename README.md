@@ -45,6 +45,8 @@
     `rm /path/to/file1` removes file1.
 
     `rm -r /path/to/directory` removes directory and all its content (-r is used to consider recursively the content).
+    
+    `rm -rf /path/to/directory/*` removes all the content of the specified directory, but not the directory itself.
 
 - **tree**
 

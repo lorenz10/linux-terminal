@@ -1,10 +1,8 @@
-# Everything (I know) about Linux Terminal
+# About Linux Terminal
 
-## 1. Commands
+## File system :open_file_folder:
 
-#### File system
-
-- **cd**
+#### cd
 
     `cd /path/to/directory` opens a given directory. 
 
@@ -16,7 +14,7 @@
 
     When tiping a directory name, if we press the `Tab` button the terminal will automatically complete its name, given that a direcotry starting with such characters exists and there is only one candidate.
 
-- **cp**
+#### cp
 
     `cp /origin/directory/file /destination/directory` copies the file into another directory.
 
@@ -24,23 +22,23 @@
 
     `cp -r /origin/directory1 .` copies direcory1 and all its content into current directory.
 
-- **ls**
+#### ls
 
     `ls /path/to/directory` shows the content of the specidic directory, if no forlder is specified show the current one. Use `-a` to show also hidden files.
 
-- **mkdir**
+#### mkdir
 
     `mkdir new_directory` creates a new directory.
 
-- **mv**
+#### mv
 
     `mv /origin/directory/file /destination/directory` moves the file into another directory.
 
-- **pwd**
+#### pwd
 
     gets the current directory path.
 
-- **rm**
+#### rm
 
     `rm /path/to/file1` removes file1.
 
@@ -48,7 +46,7 @@
     
     `rm -rf /path/to/directory/*` removes all the content of the specified directory, but not the directory itself.
 
-- **tree**
+#### tree
 
     shows the contents of the working directory recursively showing sub-directories and files. Use `-a` to show also hidden files.
 

@@ -1,119 +1,156 @@
 # About Linux Terminal
 
+```man any_command``` shows the manual of a given command.
+
 ## File system :open_file_folder:
+
+#### basename
+
+extracts the filename from a complete path.
 
 #### cd
 
-    `cd /path/to/directory` opens a given directory. 
+`cd /path/to/directory` opens a given directory. 
 
-    `cd` alone leads to the current user' home directory.
+`cd` alone leads to the current user' home directory.
 
-    `cd ..` leads to the parent directory. For example `cd ../../data` bring us two levels back in the tree and opens the directory named "data".
+`cd ..` leads to the parent directory. For example `cd ../../data` bring us two levels back in the tree and opens the directory named "data".
 
-    `cd -` leads to the previous working directory.
+`cd -` leads to the previous working directory.
 
-    When tiping a directory name, if we press the `Tab` button the terminal will automatically complete its name, given that a direcotry starting with such characters exists and there is only one candidate.
+When tiping a directory name, if we press the `Tab` button the terminal will automatically complete its name, given that a direcotry starting with such characters exists and there is only one candidate.
 
 #### cp
 
-    `cp /origin/directory/file /destination/directory` copies the file into another directory.
+`cp /origin/directory/file /destination/directory` copies the file into another directory.
 
-    `cp -r /origin/directory1 /destination/directory2` copies direcory1 and all its content into directory2.
+`cp -r /origin/directory1 /destination/directory2` copies direcory1 and all its content into directory2.
 
-    `cp -r /origin/directory1 .` copies direcory1 and all its content into current directory.
+`cp -r /origin/directory1 .` copies direcory1 and all its content into current directory.
 
 #### ls
 
-    `ls /path/to/directory` shows the content of the specidic directory, if no forlder is specified show the current one. Use `-a` to show also hidden files.
+`ls /path/to/directory` shows the content of the specidic directory, if no forlder is specified show the current one. 
+
+Use `-a` option to show also hidden files.
+
+Use `-R` option to show recursively all sub-dirctories and files.
 
 #### mkdir
 
-    `mkdir new_directory` creates a new directory.
+`mkdir new_directory` creates a new directory.
 
 #### mv
 
-    `mv /origin/directory/file /destination/directory` moves the file into another directory.
+`mv /origin/directory/file /destination/directory` moves the file into another directory.
 
 #### pwd
 
-    gets the current directory path.
+gets the path to the current directory.
 
 #### rm
 
-    `rm /path/to/file1` removes file1.
+`rm /path/to/file1` removes file1.
 
-    `rm -r /path/to/directory` removes directory and all its content (-r is used to consider recursively the content).
+`rm -r /path/to/directory` removes directory and all its content (-r is used to consider recursively the content).
     
-    `rm -rf /path/to/directory/*` removes all the content of the specified directory, but not the directory itself.
+`rm -rf /path/to/directory/*` removes all the content of the specified directory, but not the directory itself.
 
 #### tree
 
-    shows the contents of the working directory recursively showing sub-directories and files. Use `-a` to show also hidden files.
+shows the contents of the working directory recursively showing sub-directories and files. Use `-a` to show also hidden files.
 
-#### Files
+## Files :bookmark_tabs:
 
-- **cat**
+#### cat
 
-    `cat file_name` shows the content of the file.
+`cat file_name` shows the content of the file.
 
-    `cat > new_file_name` creates a new file. Then the cursor will be on a new line giving the possibility to write inside the new file. Once terminated typing can press `Ctrl + c` to finish editing.
+`cat > new_file_name` creates a new file. Then the cursor will be on a new line giving the possibility to write inside the new file. Once terminated typing can press `Ctrl + c` to finish editing.
 
-- **echo**
+#### echo
 
-    `echo 'Text to be placed in the file' > new_file.txt` creates a new file containing the provided text.
+`echo 'Text to be placed in the file' > new_file.txt` creates a new file containing the provided text.
 
-- **mv**
+#### mv
 
-    `mv old_file_name new_file_name` changes the name of a file. Works with directories too.
+`mv old_file_name new_file_name` changes the name of a file or a directory.
 
-- **tail**
+#### sed
 
-    `tail -n 100 new_file` shows the last 100 lines of a file, shows the last 10 if -n option is not specified.
+`sed -i 's/apple/pie/g' file_name` replaces all occurrencies of the word "apple" with the word "pie" inside a file.
 
-- **touch**
+#### tail
 
-    `touch new_file_name` creates a new empty file.
+`tail -n 100 new_file` shows the last 100 lines of a file, shows the last 10 if -n option is not specified.
 
-- **wget**
+#### touch
 
-    `wget -O new_file_name.zip https://github.com/path/to/archive/master.zip` downloads a file from the web, renaming it.
+`touch new_file_name` creates a new empty file.
 
-#### Others
+## Internet :satellite:
 
-- **clear** 
+#### ifconfig
 
-    clears the view from previous commands.
+if used alone shows all network interfaces.
 
-- **date**
+#### netstat
 
-    shows the current timestamp. If followed by `+%s` it is shown in unix format.
+`netstat -ant` or `netstat -pant` display network information such as open connections and socket ports.
 
-- **kill**
+#### ping
 
-    `kill <PID>` kills the processes with a given PID (process ID). Can specify as many PIDs as you want.
+`ping <IP>` ping the specific IP. Press `ctrl` + `c` to stop and show the resume of the attempts so far.
 
-- **ping**
+#### scp
 
-    `ping <IP>` ping the specific IP.
+`scp -P 2222 file_name username@ip_address:/path/to/destination` uploads a file through SSH into the destination folder through port 2222. Use `-r` to upload a directory. 
 
-- **ps**
+#### wget
 
-    `ps -ef` shows all running processes with detailed info.
+`wget -O new_file_name.zip https://github.com/path/to/archive/master.zip` downloads a file from the web, renaming it.
 
-- **su**
+## Users :bust_in_silhouette:
 
-    `su` alone switches the current user into the super user.
-    
-    `su user_name` switches back the super user into the specified user.
+#### su
+
+`su` alone switches the current user into the super user.
+
+#### whoami
+
+returns the name of the current user.
+
+## Others
+
+#### clear
+
+clears the view from previous commands.
+
+#### date
+
+shows the current timestamp. If followed by `+%s` it is shown in unix format.
+
+#### kill
+
+`kill <PID>` kills the processes with a given PID (process ID). Can specify as many PIDs as you want.
+
+#### ps
+
+`ps -ef` shows all running processes with detailed info.
+
+#### watch
+
+`watch -n 100 any_command` executes every 100 seconds any specified command.
+
+#### top
+
+shows an auto-updated table with all running processes.
 
 -------------
 
 ## 2. Packages
 
-#### netstat
-display network-related information such as open connections and socket ports. 
-* `apt-get install net-tools`
-* `netstat -ant` or `netstat -pant`
+
 
 #### simpleHTTPserver (Python)
 creates a simple HTTP server on your machine.

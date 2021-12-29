@@ -3,10 +3,6 @@
 ```man any_command``` 
 shows the manual of a given command.
 
-* [File system](#fs)
-* [Files](#files)
-
-<a name="fs"></a>
 ## File system :open_file_folder:
 
 #### basename
@@ -69,7 +65,6 @@ shows the contents of the working directory recursively showing sub-directories 
 
 Use `-a` option to show also all hidden files.
 
-<a name="files"></a>
 ## Files :bookmark_tabs:
 
 #### cat
@@ -82,7 +77,7 @@ Use `-a` option to show also all hidden files.
 
 `echo "New text" > new_file.txt` creates a new file containing the provided text.
 
-`echo -e "New text" >> /path/to/existing_file.txt` adds a new line of text at the end of an existing file.
+`echo -e 'New text' >> /path/to/existing_file.txt` adds a new line of text at the end of an existing file.
 
 #### grep
 

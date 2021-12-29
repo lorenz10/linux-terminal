@@ -1,7 +1,12 @@
 # About Linux Terminal
 
-```man any_command``` shows the manual of a given command.
+```man any_command``` 
+shows the manual of a given command.
 
+* [File system](#fs)
+* [Files](#files)
+
+<a name="fs"></a>
 ## File system :open_file_folder:
 
 #### basename
@@ -12,27 +17,31 @@ extracts the filename from a complete path.
 
 `cd /path/to/directory` opens a given directory. 
 
-`cd` alone leads to the current user' home directory.
+`cd` alone leads to the home directory of the current user.
 
 `cd ..` leads to the parent directory. For example `cd ../../data` bring us two levels back in the tree and opens the directory named "data".
 
 `cd -` leads to the previous working directory.
 
-When tiping a directory name, if we press the `Tab` button the terminal will automatically complete its name, given that a direcotry starting with such characters exists and there is only one candidate.
+When tiping a directory name, if we press the `Tab` button the terminal will automatically complete its name.
 
 #### cp
 
 `cp /origin/directory/file /destination/directory` copies the file into another directory.
 
-`cp -r /origin/directory1 /destination/directory2` copies direcory1 and all its content into directory2.
+Use `-r` option to copy a directory with all its content.
 
-`cp -r /origin/directory1 .` copies direcory1 and all its content into current directory.
+#### du
+
+`du -sh any_directory` returns the size of a directory in human-readable format.
 
 #### ls
 
 `ls /path/to/directory` shows the content of the specidic directory, if no forlder is specified show the current one. 
 
 Use `-a` option to show also hidden files.
+
+Use `-l` option to show the permissions of each file or directory.
 
 Use `-R` option to show recursively all sub-dirctories and files.
 
@@ -52,29 +61,40 @@ gets the path to the current directory.
 
 `rm /path/to/file1` removes file1.
 
-`rm -r /path/to/directory` removes directory and all its content (-r is used to consider recursively the content).
-    
-`rm -rf /path/to/directory/*` removes all the content of the specified directory, but not the directory itself.
+Use `-r` option to remove a directory and all its content.
 
 #### tree
 
-shows the contents of the working directory recursively showing sub-directories and files. Use `-a` to show also hidden files.
+shows the contents of the working directory recursively showing sub-directories and files. 
 
+Use `-a` option to show also all hidden files.
+
+<a name="files"></a>
 ## Files :bookmark_tabs:
 
 #### cat
 
-`cat file_name` shows the content of the file.
+`cat file_name` shows the content of a file.
 
-`cat > new_file_name` creates a new file. Then the cursor will be on a new line giving the possibility to write inside the new file. Once terminated typing can press `Ctrl + c` to finish editing.
+`cat > new_file_name` creates a new file. The cursor will be prompted on a new line giving the possibility to write inside it. Once terminated typing can press `Ctrl` + `c` to terminate.
 
 #### echo
 
-`echo 'Text to be placed in the file' > new_file.txt` creates a new file containing the provided text.
+`echo "New text" > new_file.txt` creates a new file containing the provided text.
+
+`echo -e "New text" >> /path/to/existing_file.txt` adds a new line of text at the end of an existing file.
+
+#### grep
+
+`grep any_word any_file` searches for a string on a given file and return the line with the resulting match.
+
+Use `-i` option to ignore case sensitivity.
+
+Use `-o` option to print only the matching part of the line and not the whole line.
 
 #### mv
 
-`mv old_file_name new_file_name` changes the name of a file or a directory.
+`mv old_file_name new_file_name` changes the name of a file or directory.
 
 #### sed
 
@@ -87,6 +107,14 @@ shows the contents of the working directory recursively showing sub-directories 
 #### touch
 
 `touch new_file_name` creates a new empty file.
+
+#### unzip
+
+`unzip file.zip` extracts the content of a zip file.
+
+#### wc
+
+`wc -l` counts the number of lines printed on standart output.
 
 ## Internet :satellite:
 
@@ -112,9 +140,13 @@ if used alone shows all network interfaces.
 
 ## Users :bust_in_silhouette:
 
+#### passwd
+
+changes the password of the current user.
+
 #### su
 
-`su` alone switches the current user into the super user.
+switches the current user into the super user.
 
 #### whoami
 
@@ -133,6 +165,10 @@ shows the current timestamp. If followed by `+%s` it is shown in unix format.
 #### kill
 
 `kill <PID>` kills the processes with a given PID (process ID). Can specify as many PIDs as you want.
+
+#### lsblk
+
+shows all disks and partitions of the machine.
 
 #### ps
 

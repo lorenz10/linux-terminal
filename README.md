@@ -95,6 +95,10 @@ Use `-o` option to print only the matching part of the line and not the whole li
 
 `sed -i 's/apple/pie/g' file_name` replaces all occurrencies of the word "apple" with the word "pie" inside a file.
 
+#### sort
+
+`sort file_name` sorts the content of a file in alphabetic order. For different sorts check all available options.
+
 #### tail
 
 `tail -n 100 new_file` shows the last 100 lines of a file, shows the last 10 if -n option is not specified.

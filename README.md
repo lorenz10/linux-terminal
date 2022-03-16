@@ -147,6 +147,20 @@ switches the current user into the super user.
 
 returns the name of the current user.
 
+## Processes
+
+#### kill
+
+`kill <PID>` kills the processes with a given PID (process ID). Can specify as many PIDs as you want.
+
+#### pidof
+
+`pidof <process_name>` returns the PID (process ID) given the name of the process.
+
+#### ps
+
+`ps -ef` shows all running processes with detailed info.
+
 ## Others
 
 #### clear
@@ -157,17 +171,9 @@ clears the view from previous commands.
 
 shows the current timestamp. If followed by `+%s` it is shown in unix format.
 
-#### kill
-
-`kill <PID>` kills the processes with a given PID (process ID). Can specify as many PIDs as you want.
-
 #### lsblk
 
 shows all disks and partitions of the machine.
-
-#### ps
-
-`ps -ef` shows all running processes with detailed info.
 
 #### watch
 

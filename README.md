@@ -77,7 +77,7 @@ Use `-a` option to show also all hidden files.
 
 `echo "New text" > new_file.txt` creates a new file containing the provided text.
 
-`echo -e 'New text' >> /path/to/existing_file.txt` adds a new line of text at the end of an existing file.
+(RIVEDI) `echo -e 'New text' >> /path/to/existing_file.txt` adds a new line of text at the end of an existing file.
 
 #### grep
 
@@ -117,9 +117,27 @@ Use `-o` option to print only the matching part of the line and not the whole li
 
 ## Internet :satellite:
 
+**curl**
+
+Transfer data form ot to a server URL.
+
+`curl www.google.it`
+
+`-I` shows only the HEADER.
+
+`-s` fails silently.
+
 #### ifconfig
 
+Used for netword-related purposes.
+
 if used alone shows all network interfaces.
+
+#### ip
+
+Used for netword-related purposes. Is an alternative to ifconfig.
+
+`ip addr` shows the IP address
 
 #### netstat
 

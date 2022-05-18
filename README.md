@@ -7,7 +7,7 @@ shows the manual of a given command.
 
 #### basename
 
-extracts the filename from a complete path.
+`basename /home/user/script.sh .sh` extracts the filename from a complete path. If followed by a suffix, like in this case, it will remove it from the end of the filename.
 
 #### cd
 

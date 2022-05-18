@@ -205,6 +205,14 @@ shows all disks and partitions of the machine.
 
 shows an auto-updated table with all running processes.
 
+## Scripting
+Variable assignment
+
+VAR="hello" assign a string
+VAR=name
+VAR=$(pwd) assing the output of a command
+LIST=("one", "two", "three")
+
 -------------
 
 ## 2. Packages

@@ -77,7 +77,7 @@ Use `-a` option to show also all hidden files.
 
 `echo "New text" > new_file.txt` creates a new file containing the provided text.
 
-(RIVEDI) `echo -e 'New text' >> /path/to/existing_file.txt` adds a new line of text at the end of an existing file.
+Use `-e` option to enable backslash escaping.
 
 #### grep
 
